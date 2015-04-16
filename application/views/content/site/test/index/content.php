@@ -34,7 +34,7 @@ if ($msg) { ?>
           <?php echo $user->name; ?>
         </td>
         <td>
-          <a href="<?php echo base_url ('test', 'edit', $user->id); ?>">編輯</a> | <a href="<?php echo base_url ('test', 'delete', $user->id) ?>">刪除</a>
+          <a href="<?php echo base_url ('test', 'read', $user->id); ?>">檢視</a> | <a href="<?php echo base_url ('test', 'edit', $user->id); ?>">編輯</a> | <a href="<?php echo base_url ('test', 'delete', $user->id) ?>">刪除</a>
         </td>
       </tr>
     <?php } ?>

@@ -67,4 +67,15 @@ class Test extends Site_controller {
       redirect (array ('test', 'index', '失敗'));
     }
   }
+
+  public function read ($id) {
+    // if ($pic = Pic::find ('all', array ('conditions' => array ('user_id' => $id)))) {
+    //   $this->load_view (array ('pics' => $pic));
+    // }
+    if ($user = User::find_by_id ($id)) {
+      $this->load_view (array ('user' => $user));
+    } else {
+      redirect (array ('test', 'index'));
+    }
+  }
 }

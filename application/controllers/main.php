@@ -14,4 +14,11 @@ class Main extends Site_controller {
   public function index () {
     $this->load_view (null);
   }
+
+  public function aaa () {
+    $this->load_view (null);
+  }
+  public function x () {
+    clean_cell ('test_cell', 'header');
+  }
 }
