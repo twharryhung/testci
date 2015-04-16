@@ -1,0 +1,185 @@
+
+
+---| 1429089012 |---| http://test.com.tw/test |---
+
+【test】 2015-04-15 17:10:12 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test】 2015-04-15 17:10:12 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test】 2015-04-15 17:10:12 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429090799 |---| http://test.com.tw/test/create |---
+
+【test/create】 2015-04-15 17:39:59 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/create】 2015-04-15 17:39:59 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/create】 2015-04-15 17:39:59 (Time: 0.5ms) INSERT INTO `users`(`account`,`password`,`name`,`created_at`,`updated_at`) VALUES(?,?,?,?,?) [['aaa', 'bbb', '123', '2015-04-15 17:39:59', '2015-04-15 17:39:59']]
+
+
+---| 1429090913 |---| http://test.com.tw/test |---
+
+【test】 2015-04-15 17:41:53 (Time: 0.2ms) SET NAMES ? [['utf8']]
+【test】 2015-04-15 17:41:53 (Time: 1.3ms) SHOW COLUMNS FROM `users`
+【test】 2015-04-15 17:41:53 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429090922 |---| http://test.com.tw/test/create |---
+
+【test/create】 2015-04-15 17:42:02 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/create】 2015-04-15 17:42:02 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/create】 2015-04-15 17:42:02 (Time: 0.7ms) INSERT INTO `users`(`account`,`password`,`name`,`created_at`,`updated_at`) VALUES(?,?,?,?,?) [['abc', 'abc', '123', '2015-04-15 17:42:02', '2015-04-15 17:42:02']]
+
+
+---| 1429090922 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-15 17:42:02 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-15 17:42:02 (Time: 1.6ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-15 17:42:02 (Time: 0.3ms) SELECT * FROM `users`
+
+
+---| 1429090958 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-15 17:42:38 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-15 17:42:38 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-15 17:42:38 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429090971 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-15 17:42:51 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-15 17:42:51 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-15 17:42:51 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429092132 |---| http://test.com.tw/test/index |---
+
+【test/index】 2015-04-15 18:02:12 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index】 2015-04-15 18:02:12 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/index】 2015-04-15 18:02:12 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429092137 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-15 18:02:17 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-15 18:02:17 (Time: 1.6ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-15 18:02:17 (Time: 0.6ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146651 |---| http://test.com.tw/test/index |---
+
+【test/index】 2015-04-16 09:10:51 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index】 2015-04-16 09:10:51 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/index】 2015-04-16 09:10:51 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429146652 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:10:52 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:10:52 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:10:52 (Time: 0.3ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146661 |---| http://test.com.tw/test/delete/2 |---
+
+【test/delete/2】 2015-04-16 09:11:01 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/delete/2】 2015-04-16 09:11:01 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/delete/2】 2015-04-16 09:11:01 (Time: 1.0ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['2']]
+【test/delete/2】 2015-04-16 09:11:01 (Time: 1.1ms) DELETE FROM `users` WHERE `id`=? [['2']]
+
+
+---| 1429146661 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-16 09:11:01 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-16 09:11:01 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-16 09:11:01 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429146664 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-16 09:11:04 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-16 09:11:04 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-16 09:11:04 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429146668 |---| http://test.com.tw/test/create |---
+
+【test/create】 2015-04-16 09:11:08 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/create】 2015-04-16 09:11:08 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/create】 2015-04-16 09:11:08 (Time: 0.5ms) INSERT INTO `users`(`account`,`password`,`name`,`created_at`,`updated_at`) VALUES(?,?,?,?,?) [['wqdeqw', 'qweqw', 'eqweqw', '2015-04-16 09:11:08', '2015-04-16 09:11:08']]
+
+
+---| 1429146668 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-16 09:11:08 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-16 09:11:08 (Time: 2.1ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-16 09:11:08 (Time: 0.3ms) SELECT * FROM `users`
+
+
+---| 1429146723 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:12:03 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:12:03 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:12:03 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146786 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:13:06 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:13:06 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:13:06 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146852 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:14:12 (Time: 0.2ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:14:12 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:14:12 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146868 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:14:28 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:14:28 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:14:28 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146872 |---| http://test.com.tw/test/update/1 |---
+
+【test/update/1】 2015-04-16 09:14:32 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/update/1】 2015-04-16 09:14:32 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test/update/1】 2015-04-16 09:14:32 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+【test/update/1】 2015-04-16 09:14:32 (Time: 0.5ms) UPDATE `users` SET `password`=?, `name`=?, `updated_at`=? WHERE `id`=? [['bbb', '456', '2015-04-16 09:14:32', '1']]
+
+
+---| 1429146887 |---| http://test.com.tw/test |---
+
+【test】 2015-04-16 09:14:47 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test】 2015-04-16 09:14:47 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test】 2015-04-16 09:14:47 (Time: 0.3ms) SELECT * FROM `users`
+
+
+---| 1429146932 |---| http://test.com.tw/test |---
+
+【test】 2015-04-16 09:15:32 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test】 2015-04-16 09:15:32 (Time: 1.2ms) SHOW COLUMNS FROM `users`
+【test】 2015-04-16 09:15:32 (Time: 0.2ms) SELECT * FROM `users`
+
+
+---| 1429146935 |---| http://test.com.tw/test/edit/1 |---
+
+【test/edit/1】 2015-04-16 09:15:35 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/edit/1】 2015-04-16 09:15:35 (Time: 1.5ms) SHOW COLUMNS FROM `users`
+【test/edit/1】 2015-04-16 09:15:35 (Time: 0.3ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+
+
+---| 1429146937 |---| http://test.com.tw/test/update/1 |---
+
+【test/update/1】 2015-04-16 09:15:37 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/update/1】 2015-04-16 09:15:37 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/update/1】 2015-04-16 09:15:37 (Time: 0.2ms) SELECT * FROM `users` WHERE `id`=? LIMIT 0,1 [['1']]
+【test/update/1】 2015-04-16 09:15:37 (Time: 0.6ms) UPDATE `users` SET `password`=?, `name`=?, `updated_at`=? WHERE `id`=? [['bbb', '111', '2015-04-16 09:15:37', '1']]
+
+
+---| 1429146937 |---| http://test.com.tw/test/index/成功 |---
+
+【test/index/成功】 2015-04-16 09:15:37 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【test/index/成功】 2015-04-16 09:15:37 (Time: 1.1ms) SHOW COLUMNS FROM `users`
+【test/index/成功】 2015-04-16 09:15:37 (Time: 0.2ms) SELECT * FROM `users`
