@@ -1683,3 +1683,24 @@
 【main/index】 2015-04-16 14:58:27 (Time: 0.1ms) SET NAMES ? [['utf8']]
 【main/index】 2015-04-16 14:58:27 (Time: 1.2ms) SHOW COLUMNS FROM `users`
 【main/index】 2015-04-16 14:58:27 (Time: 0.3ms) SELECT * FROM `users` LIMIT 0,1
+
+
+---| 1429840134 |---| http://test.com.tw/ |---
+
+【】 2015-04-24 09:48:54 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【】 2015-04-24 09:48:54 (Time: 1.3ms) SHOW COLUMNS FROM `users`
+【】 2015-04-24 09:48:54 (Time: 0.3ms) SELECT * FROM `users` LIMIT 0,1
+
+
+---| 1429840174 |---| http://test.com.tw/test |---
+
+【test】 2015-04-24 09:49:34 (Time: 0.2ms) SET NAMES ? [['utf8']]
+【test】 2015-04-24 09:49:34 (Time: 1.3ms) SHOW COLUMNS FROM `users`
+【test】 2015-04-24 09:49:34 (Time: 0.3ms) SELECT * FROM `users`
+
+
+---| 1430187726 |---| http://127.0.0.1/testci/ |---
+
+【】 2015-04-28 10:22:06 (Time: 0.1ms) SET NAMES ? [['utf8']]
+【】 2015-04-28 10:22:06 (Time: 15.4ms) SHOW COLUMNS FROM `users`
+【】 2015-04-28 10:22:06 (Time: 0.3ms) SELECT * FROM `users` LIMIT 0,1
